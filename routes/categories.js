@@ -3,10 +3,10 @@ const router = express.Router();
 const categoriesController = require('../controllers/categoriesController'); // Import controller books
 
 // Route untuk mendapatkan semua buku
-router.get('/', categoriesController.getAllBooks);
+router.get('/', categoriesController.getAllCategories);
 
 // Route untuk mendapatkan buku berdasarkan ID
-router.get('/:id', categoriesController.getBookById);
+router.get('/:id', categoriesController. getCategoryById);
 
 // Route untuk menambahkan buku baru
 router.post('/', categoriesController.store);
